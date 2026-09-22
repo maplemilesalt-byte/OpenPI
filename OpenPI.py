@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 # ==========================================
 # CONFIG
@@ -54,6 +55,7 @@ def cmd_help(args):
     print("  rmdir <directory>")
     print("  cd <directory>")
     print("  pwd")
+    print("  time")
     print("  echo <text>")
     print("  run <file.py>")
     print("  clear")
@@ -208,6 +210,9 @@ def cmd_cd(args):
 def cmd_pwd(args):
     print(fs_pwd())
 
+def cmd_time(args):
+    print(time.strftime("%H:%M:%S"))
+
 def cmd_echo(args):
     print(" ".join(args))
 
@@ -259,6 +264,7 @@ commands = {
     "rmdir": cmd_rmdir,
     "cd": cmd_cd,
     "pwd": cmd_pwd,
+    "time": cmd_time,
     "echo": cmd_echo,
     "run": cmd_run,
     "clear": cmd_clear,
