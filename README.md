@@ -5,3 +5,7 @@ OpenPI is an stupid shell that I decided to make while waiting my PI Pico to arr
 Yes probably
 ## Can I use it for my projects?
 What do you think that is an Open Source program?
+## About LLM coding
+Yes I used that and I don't care.
+## Will it work in another board?
+Yes, and you can run it anywhere that supports Python.
