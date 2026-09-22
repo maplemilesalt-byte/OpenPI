@@ -1,4 +1,5 @@
 import os
+import sys
 
 # ==========================================
 # CONFIG
@@ -56,6 +57,7 @@ def cmd_help(args):
     print("  echo <text>")
     print("  run <file.py>")
     print("  clear")
+    print("  shutdown")
 
 def cmd_ls(args):
     files = fs_ls()
@@ -232,6 +234,12 @@ def cmd_run(args):
     except Exception as e:
         print("Program error:", e)
 
+def cmd_shutdown(args):
+    print()
+    print("Now is safe to turn your Pi, press enter to kill this task")
+    input()
+    sys.exit(0)
+
 def cmd_clear(args):
     # ANSI escape sequence to clear the terminal
     print("\033[2J\033[H")
@@ -254,6 +262,7 @@ commands = {
     "echo": cmd_echo,
     "run": cmd_run,
     "clear": cmd_clear,
+    "shutdown": cmd_shutdown,
 }
 
 # ==========================================
