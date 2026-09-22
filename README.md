@@ -1,6 +1,9 @@
 # OpenPI
 ![OpenPI Logo](https://github.com/maplemilesalt-byte/OpenPI/blob/main/%EF%BF%BCOpen%20PI%20logo%20(White%20Text).svg)
-
+## Installing
+``` git clone https://github.com/maplemilesalt-byte/OpenPI.git && cd OpenPI ```
+Rename OpenPI.py to main.py
+Send the files to your Pi pico
 ## About
 OpenPI is an stupid shell that I decided to make while waiting my PI Pico to arrive.
 ## Will it be updated?
