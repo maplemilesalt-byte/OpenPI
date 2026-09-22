@@ -19,17 +19,31 @@ Yes, I don't care, my code is your code, this is the USSR of codes.
 It's completly disallowed and discouraged. RIGHT MICROSOFT?
 ## Command documentation (if you are dumb)
   help - shows every command
+  
   ls - shows every file on the directory
+  
   cat <file> - displays text inside a file
+  
   write <file> - makes an file (no it doesn't write bytes)
+  
   edit <file> - edits a file (like any)
+  
   rm <file> - deletes a file
+  
   mkdir <directory> - creates a directory
+  
   rmdir <directory> - removes a directory
-  cd <directory> - enters on a directory (no, it doesn't write CDs or DVDs
+  
+  cd <directory> - enters on a directory (no, it doesn't write CDs or DVDs)
+  
   pwd - shows current directory
+  
   time - displays current time (based on your timezone)
+  
   echo <text>- shows an text you wrote
+  
   run <file.py> runs an python file (self explanatory)
+  
   clear - clears screen (also self explanatory)
-  shutdown - doesn't actually shutdown, just assumes it's safe to
+  
+  shutdown - doesn't actually shutdown, just assumes it's safe to do
