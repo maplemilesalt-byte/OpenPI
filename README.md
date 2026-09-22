@@ -4,7 +4,7 @@
 ``` git clone https://github.com/maplemilesalt-byte/OpenPI.git && cd OpenPI ```
 And send the files to your Pi pico (it didn't arrive, idk how to do)
 ## About
-OpenPI is an stupid shell that I decided to make while waiting my PI Pico to arrive.
+OpenPI is an stupid shell that I decided to make while waiting my Raspberry Pi Pico to arrive.
 ## Will it be updated?
 Yes probably.
 ## Can I use it for my projects?
