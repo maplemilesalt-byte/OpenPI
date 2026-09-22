@@ -1,4 +1,6 @@
 # OpenPI
+![OpenPI Logo](https://github.com/maplemilesalt-byte/OpenPI/blob/main/%EF%BF%BCOpenPI%20logo.svg)
+
 ## About
 OpenPI is an stupid shell that I decided to make while waiting my PI Pico to arrive.
 ## Will it be updated?
