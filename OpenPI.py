@@ -155,8 +155,8 @@ def cmd_rm(args):
 
     filename = args[0]
 
-    if filename == "main.py":
-        print("Error: main.py is protected by the system.")
+    if filename in ("main.py", "OpenPI.py"):
+        print("Error: system file is protected.")
         return
 
     try:
