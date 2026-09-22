@@ -58,6 +58,7 @@ def cmd_help(args):
     print("  time")
     print("  echo <text>")
     print("  run <file.py>")
+    print("  gui")
     print("  clear")
     print("  shutdown")
 
@@ -193,7 +194,7 @@ def cmd_rmdir(args):
         fs_rmdir(dirname)
         print("Directory removed:", dirname)
     except OSError as e:
-        print("Error removing directory:", e)
+        print("Error:", e)
 
 def cmd_cd(args):
     if len(args) == 0:
@@ -239,6 +240,19 @@ def cmd_run(args):
     except Exception as e:
         print("Program error:", e)
 
+def cmd_gui(args):
+    try:
+        with open("gui.py", "r") as file:
+            code = file.read()
+
+        exec(code, {"__name__": "__main__"})
+
+    except OSError as e:
+        print("GUI error:", e)
+
+    except Exception as e:
+        print("GUI error:", e)
+
 def cmd_shutdown(args):
     print()
     print("Now is safe to turn off your Pi. Press Enter to exit")
@@ -267,6 +281,7 @@ commands = {
     "time": cmd_time,
     "echo": cmd_echo,
     "run": cmd_run,
+    "gui": cmd_gui,
     "clear": cmd_clear,
     "shutdown": cmd_shutdown,
 }
