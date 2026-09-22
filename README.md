@@ -13,3 +13,5 @@ Yes I used that and I don't care.
 Yes, and you can run it anywhere that supports Python.
 ## Can you train an AI with my code?
 Yes, I don't care, my code is your code, this is the USSR of codes.
+## About ADs in our systems
+It's completly disallowed and discouraged. RIGHT MICROSOFT?
