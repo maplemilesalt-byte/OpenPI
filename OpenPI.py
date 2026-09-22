@@ -236,7 +236,7 @@ def cmd_run(args):
 
 def cmd_shutdown(args):
     print()
-    print("Now is safe to turn your Pi, press enter to kill this task")
+    print("Now is safe to turn off your Pi. Press Enter to exit")
     input()
     sys.exit(0)
 
