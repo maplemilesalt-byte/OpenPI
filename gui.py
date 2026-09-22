@@ -2,11 +2,11 @@ import os
 import sys
 import termios
 import tty
-import select
 
 RESET = "\033[0m"
 REVERSE = "\033[7m"
 CLEAR = "\033[2J\033[H"
+
 
 def get_key():
     fd = sys.stdin.fileno()
@@ -16,31 +16,13 @@ def get_key():
         tty.setcbreak(fd)
         key = sys.stdin.read(1)
 
-        if key == "\033":
-            ready, _, _ = select.select([sys.stdin], [], [], 0.05)
-            if not ready:
-                return "esc"
-
-            second = sys.stdin.read(1)
-            if second != "[":
-                return "esc"
-
-            third = sys.stdin.read(1)
-
-            return {
-                "A": "up",
-                "B": "down",
-                "C": "right",
-                "D": "left",
-            }.get(third, "esc")
-
         if key in ("\r", "\n"):
             return "enter"
 
-        if key == "q":
+        if key.lower() == "q":
             return "quit"
 
-        return key
+        return key.lower()
 
     finally:
         termios.tcsetattr(fd, termios.TCSADRAIN, old)
@@ -62,7 +44,6 @@ def draw(files, cursor, cwd):
 
             for i, name in enumerate(row):
                 index = start + i
-                label = name
 
                 if os.path.isdir(name):
                     label = "[DIR] " + name
@@ -78,7 +59,7 @@ def draw(files, cursor, cwd):
 
     print()
     print("=" * 50)
-    print("ARROWS: move    ENTER: open    Q: quit")
+    print("WASD: move    ENTER: open    Q: quit")
     print("Enter a directory to enter it.")
     print("Enter a .py file to run it.")
 
@@ -125,16 +106,16 @@ def gui():
         if not files:
             continue
 
-        if key == "left":
+        if key == "a":
             cursor = max(0, cursor - 1)
 
-        elif key == "right":
+        elif key == "d":
             cursor = min(len(files) - 1, cursor + 1)
 
-        elif key == "up":
+        elif key == "w":
             cursor = max(0, cursor - 4)
 
-        elif key == "down":
+        elif key == "s":
             cursor = min(len(files) - 1, cursor + 4)
 
         elif key == "enter":
