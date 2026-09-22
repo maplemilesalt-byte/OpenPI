@@ -1,4 +1,4 @@
-# OpenPI
+# ￼OpenPI logo.svg
 ## About
 OpenPI is an stupid shell that I decided to make while waiting my PI Pico to arrive.
 ## Will it be updated?
