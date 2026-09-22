@@ -40,7 +40,7 @@ It's completly disallowed and discouraged. RIGHT MICROSOFT?
   
   time - displays current time (based on your timezone)
   
-  echo <text>- shows an text you wrote
+  echo <text> - shows an text you wrote
   
   run <file.py> runs an python file (self explanatory)
   
