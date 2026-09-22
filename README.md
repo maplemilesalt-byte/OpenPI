@@ -9,5 +9,5 @@ What do you think that is an Open Source program?
 Yes I used that and I don't care.
 ## Will it work in another board?
 Yes, and you can run it anywhere that supports Python.
-## Can you train an AI with my code
+## Can you train an AI with my code?
 Yes, I don't care, my code is your code, this is the USSR of codes.
