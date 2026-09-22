@@ -18,6 +18,7 @@ Yes, I don't care, my code is your code, this is the USSR of codes.
 ## About ADs in our systems
 It's completly disallowed and discouraged. RIGHT MICROSOFT?
 ## Command documentation (if you are dumb)
+### DON'T BRING THIS TO THE PERSONAL SIDE
   help - shows every command
   
   ls - shows every file on the directory
