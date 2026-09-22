@@ -83,8 +83,8 @@ def cmd_write(args):
 
     filename = args[0]
 
-    if filename == "main.py":
-        print("Error: main.py is protected by the system.")
+    if filename in ("main.py", "OpenPI.py"):
+        print("Error: system file is protected.")
         return
 
     print("Enter the content.")
@@ -115,8 +115,8 @@ def cmd_edit(args):
 
     filename = args[0]
 
-    if filename == "OpenPI.py":
-        print("Error: OpenPI.py is protected by the system.")
+    if filename in ("main.py", "OpenPI.py"):
+        print("Error: system file is protected.")
         return
 
     try:
